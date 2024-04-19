@@ -185,5 +185,6 @@ border: 2px solid black;}
 
 .imgfooter
 {display: flex;
+box-sizing: border-box; 
 align-content: center;
 justify-content: center;}
