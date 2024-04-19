@@ -72,15 +72,42 @@ align-items: center;}
     flex-wrap: nowrap;
     align-items: center;
     margin: 15px;
-  
     background-attachment: scroll;
 background-color:#afa9a9c1 ;}
+ 
+.elcarrito 
+{display: flex;
+    flex-direction: column;
+    border-width: 5px;
+    border-style: double;
+    border-color: black;
+    padding: 10px;
+    font-size: 20px;
+
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;} 
+
+
+    .Remera {
+        display: flex;
+        flex-direction: column;
+        border-width: 5px;
+        border-style: double;
+        border-color: black;
+        padding: 10px;
+        font-size: 20px;
+        }
 
 .home1 {
 text-align: center;
 text-decoration: underline;
+}
 
+.titulocarrito {
 
+    text-align: center;
+    text-decoration: underline;
 }
 
 .container1
