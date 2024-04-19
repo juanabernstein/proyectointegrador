@@ -3,11 +3,17 @@
 margin: 0;
 padding: 0;}
 
+body
+{font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', 'sans-serif';
+margin: 0;
+padding: 0;}
+
 /*header*/
 nav
-{background-color: #afa9a9c1;
+{background-color: #5e6460b3;
 padding: 10px;
-height: 10vh;}
+height: 10vh;
+width: 100%}
 
 ul
 {display: flex;
@@ -19,30 +25,78 @@ li
 .nav
 {text-decoration: none;
 color: #fff;
-background-color: #afa9a9c1;
+background-color: rgba(171, 164, 171, 0.412);
 padding: 12px 24px;
 border-radius: 5px;
 width: 100px;
 display: inline-block;}
 
 img 
-{width: 80px;}
+{width: 60px;}
 
+.precio
+{display: inline;}
 
-.home1 
+.carrito
+{display: inline;}
+
+footer
+{display: block;
+justify-content: center;
+bottom: 0;
+width: 100%;
+background-color: #5e6460b3;
+color: #fff;
+padding: 20px;
+align-items: center;}
+
+.accesorios
 {text-align: center;
-text-decoration: underline;}
+padding: 10px;}
+
+.fotosaccesorios
+{height: 150px;
+padding: 15px;
+width: 150px;
+border-radius: 10px;
+justify-content: center;
+align-items: center;}
+
 
 
 .cajas
+{height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 15px;
+  
+    background-attachment: scroll;
+background-color:#afa9a9c1 ;}
+
+.home1 {
+text-align: center;
+text-decoration: underline;
+
+
+}
+
+.container1
 {height: 100%;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
 flex-wrap: nowrap;
+align-items: center;
 margin: 15px;
-background-attachment: scroll;
-margin: 10px;
+justify-content: center;
+background-attachment: scroll;}
+
+
+.bolsodecuero, .collardeplata, .anteojosdesol, .bufanda, .reloj
+{margin: 10px;
 padding: 10px;
 line-height: 1.5;
 background-color: #afa9a9c1;
@@ -73,34 +127,114 @@ align-items: center;
 justify-content: center;}
 
 
+button
+{justify-content: center;
+text-align: center;}
 
+h3
+{justify-content: center;
+text-align: center;}
 
+.bodyaccesorios 
+{background-color: rgb(255, 255, 255);}
 
+.container2
+{height: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+flex-wrap: nowrap;
+align-items: center;
+margin: 15px;
+justify-content: center;
+background-attachment: scroll;}
 
+.anillo, .cinturón, .gorra, .media, .billetera
+{margin: 10px;
+padding: 10px;
+line-height: 1.5}
 
+.clothingstore
+{justify-content: center;
+text-align: center;}
 
+.bolsodecuero
+{background-color: #afa9a9c1;
+border-radius: 20px;
+border: 2px solid black;}
 
+.collardeplata
+{background-color: #afa9a9c1;
+border-radius: 20px;
+border: 2px solid black;}
 
+.anteojosdesol
+{background-color: #afa9a9c1;
+border-radius: 20px;
+border: 2px solid black;}
 
+.bufanda
+{background-color: #afa9a9c1;
+border-radius: 20px;
+border: 2px solid black;}
 
+.reloj
+{background-color: #afa9a9c1;
+border-radius: 20px;
+border: 2px solid black;}
 
+.anillo
+{background-color: #afa9a9c1;
+border-radius: 20px;
+border: 2px solid black;}
 
+.cinturón
+{background-color: #afa9a9c1;
+border-radius: 20px;
+border: 2px solid black;}
 
+.gorra
+{background-color: #afa9a9c1;
+border-radius: 20px;
+border: 2px solid black;}
 
+.media
+{background-color: #afa9a9c1;
+border-radius: 20px;
+border: 2px solid black;}
 
+.billetera
+{background-color: #afa9a9c1;
+border-radius: 20px;
+border: 2px solid black;}
 
+.bodyaccesorios
+{background-color: rgb(228, 222, 222);}
 
+.bodycarrito
+{background-color: rgb(228, 222, 222);}
 
+.bodyelectronica
+{background-color: rgb(228, 222, 222);}
 
+.bodyhombre
+{background-color: rgb(228, 222, 222);}
 
+.bodyhome
+{background-color: rgb(228, 222, 222);}
 
+.bodymujer
+{background-color: rgb(228, 222, 222);}
 
+.bodylogin
+{background-color: rgb(228, 222, 222);}
 
+.bodyregistro
+{background-color: rgb(228, 222, 222);}
 
-
-
-
-
-
-
+.imgfooter
+{display: flex;
+box-sizing: border-box; 
+align-content: center;
+justify-content: center;}
 
