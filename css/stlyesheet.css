@@ -5,15 +5,15 @@ padding: 0;}
 
 body
 {font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', 'sans-serif';
-margin: 0;
-padding: 0;}
+}
 
 /*header*/
 nav
 {background-color: #5e6460b3;
 padding: 10px;
-height: 10vh;
-width: 100%}
+height: 7vh;
+width: 100% ;
+}
 
 ul
 {display: flex;
@@ -27,7 +27,6 @@ li
 color: #fff;
 background-color: rgba(171, 164, 171, 0.412);
 padding: 12px 24px;
-border-radius: 5px;
 width: 100px;
 display: inline-block;}
 
@@ -40,15 +39,38 @@ img
 .carrito
 {display: inline;}
 
-footer
-{display: block;
+.elogin
+{display: inline-block;
 justify-content: center;
-bottom: 0;
 width: 100%;
 background-color: #5e6460b3;
 color: #fff;
 padding: 20px;
-align-items: center;}
+align-items: center;
+margin-top: 520px;}
+
+.enhome {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    background-color: #5e6460b3;
+    color: #fff;
+    padding: 20px;
+    align-items: center;
+    margin-top: 95px;
+}
+
+.encarro {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    background-color: #5e6460b3;
+    color: #fff;
+    padding: 20px;
+    align-items: center;
+
+
+}
 
 .accesorios
 {text-align: center;
@@ -83,10 +105,31 @@ background-color:#afa9a9c1 ;}
     border-color: black;
     padding: 10px;
     font-size: 20px;
-
     display: inline-block;
     border: 1px solid black;
     padding: 10px;} 
+
+    .csslog {
+        display: flex;
+        flex-direction: row;
+        border-color: black;
+        font-size: 20px;
+        display: inline-block;
+        border: 10px solid black;
+        padding: 30px;
+    
+    }
+
+    .cajapek {
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        border: 5px solid black;
+        padding: 30px;
+        background-color: grey;
+       
+
+    }
 
 
     .Remera {
@@ -265,3 +308,43 @@ box-sizing: border-box;
 align-content: center;
 justify-content: center;}
 
+@media (max-width: 850px) {
+    .cajas{
+display: flex;
+height: 33%;
+flex-direction: column;
+margin: 5px;
+width: 225%;
+align-items: left;}
+
+nav
+{width: 228vw ;}
+
+.home1 {
+    text-align: left;
+    
+ }
+
+ footer
+ {display: inline-block;
+ width: 225%;}
+
+
+
+ .elogin
+{
+    margin-top: 1455px;
+    width: 228vw ;}
+
+.enhome {
+    margin-top: 95px;
+    width: 228vw ;
+}
+
+.encarro {
+   
+    margin-top: 770px;
+    width: 228vw ;
+}
+
+}
