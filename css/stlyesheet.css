@@ -346,5 +346,14 @@ nav
     margin-top: 770px;
     width: 228vw ;
 }
+} 
 
-}
+footer
+{display: block;
+justify-content: center;
+bottom: 0;
+width: 100%;
+background-color: #5e6460b3;
+color: #fff;
+padding: 20px;
+align-items: center;}
