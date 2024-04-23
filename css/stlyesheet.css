@@ -45,9 +45,9 @@ justify-content: center;
 width: 100%;
 background-color: #5e6460b3;
 color: #fff;
-padding: 20px;
+padding: 60px;
 align-items: center;
-margin-top: 520px;}
+margin-top: 600px;}
 
 .enhome {
     display: inline-block;
@@ -172,7 +172,7 @@ line-height: 1.5;
 background-color: #afa9a9c1;
 border-radius: 20px;} 
 
-.fondoc 
+.fondoc, .fondo
 {background-color: #afa9a9c1}
 
 .ingresar 
@@ -181,27 +181,14 @@ font-weight: bold;
 text-decoration: underline;
 font-size: 50px;}
 
-.fondo 
-{background-color: #afa9a9c1}
-
-.recover 
-{display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;}
-
-.login 
+.login, .recover
 {display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;}
 
 
-button
-{justify-content: center;
-text-align: center;}
-
-h3
+button, .h3
 {justify-content: center;
 text-align: center;}
 
@@ -228,78 +215,12 @@ line-height: 1.5}
 {justify-content: center;
 text-align: center;}
 
-.bolsodecuero
+.bolsodecuero, .collardeplata, .anteojosdesol, .bufanda, .reloj, .anillo, .cinturón, .gorra, .media, .billetera
 {background-color: #afa9a9c1;
 border-radius: 20px;
 border: 2px solid black;}
 
-.collardeplata
-{background-color: #afa9a9c1;
-border-radius: 20px;
-border: 2px solid black;}
-
-.anteojosdesol
-{background-color: #afa9a9c1;
-border-radius: 20px;
-border: 2px solid black;}
-
-.bufanda
-{background-color: #afa9a9c1;
-border-radius: 20px;
-border: 2px solid black;}
-
-.reloj
-{background-color: #afa9a9c1;
-border-radius: 20px;
-border: 2px solid black;}
-
-.anillo
-{background-color: #afa9a9c1;
-border-radius: 20px;
-border: 2px solid black;}
-
-.cinturón
-{background-color: #afa9a9c1;
-border-radius: 20px;
-border: 2px solid black;}
-
-.gorra
-{background-color: #afa9a9c1;
-border-radius: 20px;
-border: 2px solid black;}
-
-.media
-{background-color: #afa9a9c1;
-border-radius: 20px;
-border: 2px solid black;}
-
-.billetera
-{background-color: #afa9a9c1;
-border-radius: 20px;
-border: 2px solid black;}
-
-.bodyaccesorios
-{background-color: rgb(228, 222, 222);}
-
-.bodycarrito
-{background-color: rgb(228, 222, 222);}
-
-.bodyelectronica
-{background-color: rgb(228, 222, 222);}
-
-.bodyhombre
-{background-color: rgb(228, 222, 222);}
-
-.bodyhome
-{background-color: rgb(228, 222, 222);}
-
-.bodymujer
-{background-color: rgb(228, 222, 222);}
-
-.bodylogin
-{background-color: rgb(228, 222, 222);}
-
-.bodyregistro
+.bodyaccesorios, .bodycarrito, .bodyelectronica, .bodyhombre, .bodyhome, .bodymujer, .bodylogin, .bodyregistro
 {background-color: rgb(228, 222, 222);}
 
 .imgfooter
@@ -307,6 +228,99 @@ border: 2px solid black;}
 box-sizing: border-box; 
 align-content: center;
 justify-content: center;}
+
+footer
+{display: block;
+justify-content: center;
+bottom: 0;
+width: 100%;
+background-color: #5e6460b3;
+color: #fff;
+padding: 20px;
+align-items: center;}
+
+main 
+{padding: 20px;}
+
+.detallesdelproducto 
+{background-color: #fff;
+padding: 90px;
+border-radius: 10px;
+text-align: center;}
+
+.imgproducto
+{width: 300px; 
+margin-bottom: 20px;}
+
+.precioproducto 
+{color: #333;}
+
+.agregaralcarritoproducto 
+{background-color: #a19b9b;
+padding: 2px;
+border-radius: 5px;
+margin-top: 10px;
+color: black;
+border: 2px solid black;
+justify-content: center;
+align-items: center;}
+
+.formregistro
+{margin: 0;
+width: 300px;
+text-align: center;
+padding: 150px;}
+
+button, .inputpassword, .inputrepeat, .labelaccept, .inputcheckbox, .inputregistro, .formregistro
+{display: block;
+width: 50%;
+padding: 10px;
+margin-bottom: 35px;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;
+flex-direction: row;
+text-align: center;}
+
+label 
+{display: block;
+margin-bottom: 10px;}
+
+.buttonregistro, .labelaccept, .inputcheckbox
+{background-color: #2856ee;
+color: #fff;
+font-size: 16px;
+background-color: #2856ee;}
+
+.bodyregistro
+{background-color: #afaaaa;}
+
+.registro 
+{font-size: 30px;}
+
+.agregaralcarrito
+{background-color: #ffffff;
+padding: 2px;
+border-radius: 5px;
+margin-top: 10px;
+color: black;
+border: 2px solid black;
+justify-content: center;
+align-items: center;
+display: inline-block;}
+
+.logos 
+{display: flex;
+align-items: center;
+display: flex;}
+
+.logosimg
+{width: 50px; 
+margin: 10px;
+align-items: center; 
+justify-content: center; 
+display: flex;}
+
 
 @media (max-width: 850px) {
     .cajas{
@@ -348,119 +362,35 @@ nav
 }
 } 
 
-footer
-{display: block;
-justify-content: center;
-bottom: 0;
-width: 100%;
-background-color: #5e6460b3;
-color: #fff;
-padding: 20px;
-align-items: center;}
 
+@media (max-width: 850px) {}
+     footer 
+    {display: block;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    background-color: #5e6460b3;
+    color: #fff;
+    padding: 20px;
+    align-items: center;}
 
-
-main 
-{padding: 20px;}
-
-.detallesdelproducto 
+    .detallesdelproducto 
 {background-color: #fff;
 padding: 90px;
 border-radius: 10px;
-text-align: center;}
+text-align: center;} 
 
-.imgproducto
-{width: 300px; 
-margin-bottom: 20px;}
+.accesorios
+{margin-top: 5px;
+width: 100vw ;
+margin-right: 500vw;}
 
-.precioproducto 
-{color: #333;}
-
-.agregaralcarritoproducto 
-{background-color: #a19b9b;
-padding: 2px;
-border-radius: 5px;
-margin-top: 10px;
-color: black;
-border: 2px solid black;
-justify-content: center;
-align-items: center;}
-
-.formregistro
-{margin: 0;
-width: 300px;
-text-align: center;
-padding: 150px;}
-
-button, .inputregistro, .inputpassword, .inputrepeat, .labelaccept, .inputcheckbox
-{display: block;
-width: 50%;
-padding: 10px;
-margin-bottom: 10px;
-border: 1px solid #ccc;
-border-radius: 5px;
-box-sizing: border-box;
-flex-direction: row;
-text-align: center;}
-
-label 
-{display: block;
-margin-bottom: 10px;}
-
-button, .labelaccept, .inputcheckbox
-{background-color: #2856ee;
-color: #fff;
-font-size: 16px;
-background-color: #2856ee;}
-
-.bodyregistro
-{background-color: #afaaaa;}
-
-.registro 
-{font-size: 30px;}
-
-
-.agregaralcarrito
-{background-color: #ffffff;
-padding: 2px;
-border-radius: 5px;
-margin-top: 10px;
-color: black;
-border: 2px solid black;
-justify-content: center;
-align-items: center;}
-
-.logos 
-{display: flex;
-align-items: center;
-display: flex;}
-
-.logosimg
-{width: 50px; 
-margin: 10px;
-align-items: center; 
-justify-content: center; 
-display: flex;}
+.bolsodecuero, .collardeplata, .anteojosdesol, .bufanda, .reloj, .anillo, .cinturón, .gorra, .media, .billetera
+{width: 100%;
+height: auto; 
+margin-right: 100px;
+display: inline-block;}
 
 
 
-@media (max-width: 850px) {
-nav
-{width: 228vh} }
-
-footer
-{display: block;
-justify-content: center;
-bottom: 0;
-width: 100%;
-background-color: #5e6460b3;
-color: #fff;
-padding: 20px;
-align-items: center;}
-
-.detallesdelproducto 
-{background-color: #fff;
-padding: 90px;
-border-radius: 10px;
-text-align: center;}
 
