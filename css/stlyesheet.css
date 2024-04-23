@@ -365,11 +365,11 @@ nav
 
 @media (max-width: 850px) {}
 nav
-{width: 400vw ;}
+{width: 230vw;}
 
 footer
  {display: inline-block;
- width: 400%;
+ width: 230%;
 height: auto}
 
     .detallesdelproducto 
@@ -389,12 +389,5 @@ height: auto;
 margin-right: 100px;
 display: inline-block;}
 
-.container1
-{margin-top: 20px;
-width: 400vw ;}
-
-.container2
-{margin-top: 20px;
-width: 400vw ;}
 
 
