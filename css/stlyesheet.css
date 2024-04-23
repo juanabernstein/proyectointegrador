@@ -364,15 +364,13 @@ nav
 
 
 @media (max-width: 850px) {}
-     footer 
-    {display: block;
-    justify-content: center;
-    bottom: 0;
-    width: 100%;
-    background-color: #5e6460b3;
-    color: #fff;
-    padding: 20px;
-    align-items: center;}
+nav
+{width: 400vw ;}
+
+footer
+ {display: inline-block;
+ width: 400%;
+height: auto}
 
     .detallesdelproducto 
 {background-color: #fff;
@@ -391,6 +389,12 @@ height: auto;
 margin-right: 100px;
 display: inline-block;}
 
+.container1
+{margin-top: 20px;
+width: 400vw ;}
 
+.container2
+{margin-top: 20px;
+width: 400vw ;}
 
 
