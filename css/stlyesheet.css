@@ -1,10 +1,11 @@
-*
-{box-sizing: border-box;
-margin: 0;
-padding: 0;}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-body
-{font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', 'sans-serif';
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', 'sans-serif';
 }
 
 /*header*/
@@ -68,8 +69,6 @@ margin-top: 600px;}
     color: #fff;
     padding: 20px;
     align-items: center;
-
-
 }
 
 .accesorios
@@ -117,7 +116,6 @@ background-color:#afa9a9c1 ;}
         display: inline-block;
         border: 10px solid black;
         padding: 30px;
-    
     }
 
     .cajapek {
