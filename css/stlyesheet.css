@@ -358,10 +358,6 @@ nav
     margin-top: 770px;
     width: 228vw ;
 }
-} 
-
-
-@media (max-width: 850px) {}
 nav
 {width: 230vw;}
 
@@ -385,7 +381,10 @@ margin-right: 500vw;}
 {width: 100%;
 height: auto; 
 margin-right: 100px;
-display: inline-block;}
+display: inline-block;} 
+} 
+
+
 
 
 
