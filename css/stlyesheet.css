@@ -266,7 +266,8 @@ align-items: center;}
 {margin: 0;
 width: 300px;
 text-align: center;
-padding: 150px;}
+padding: 150px;
+width: 100%;}
 
 button, .inputpassword, .inputrepeat, .labelaccept, .inputcheckbox, .inputregistro, .formregistro
 {display: block;
