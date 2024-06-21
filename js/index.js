@@ -31,3 +31,33 @@ fetch (url)
     console.log ("El error es" + error);
 })
 
+
+let url2 = "https://fakestoreapi.com/products/category/women's%20clothing"
+fetch (url2) 
+.then (function(resp) {
+    return resp.json();
+})
+.then (function (data){
+    let productos = document.querySelector(".containerSection2") ;
+    let ropaw = '';
+    let informacion = data;
+    
+
+    for(let i=0; i<informacion.length; i++ ) {
+        console.log (informacion[i]);
+        ropaw += `<article class="bolsodecuero">
+        <h3>${informacion[i].title}</h3>
+        <div class="containerImg">
+            <a href="detalleProducto.html?id=${informacion[i].id}">
+                <img src="${informacion[i].image}" alt="">
+            </a>
+        </div>
+        <p> ${informacion[i].description}</p>
+        <h4 class="precio"> ${informacion[i].price}</h4>
+        <a class="buttonVerMas" href="detalleProducto.html?id=${informacion[i].id}">Ver mas</a>
+    </article>`;
+    }
+
+    productos.innerHTML = ropaw ; 
+
+})
