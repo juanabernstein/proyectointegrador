@@ -14,13 +14,13 @@ fetch (url)
         accesorios += `<article class="bolsodecuero">
         <h3>${info[i].title}</h3>
         <div class="containerImg">
-            <a href="detalleProducto.html?id=${info[i].id}">
+            <a href="producto.html?id=${info[i].id}">
                 <img src="${info[i].image}" alt="">
             </a>
         </div>
         <p> ${info[i].description}</p>
         <h4 class="precio"> ${info[i].price}</h4>
-        <a class="buttonVerMas" href="detalleProducto.html?id=${info[i].id}">Ver mas</a>
+        <a class="buttonVerMas" href="producto.html?id=${info[i].id}">Ver mas</a>
     </article>`;
     }
 
@@ -48,13 +48,13 @@ fetch (url2)
         ropaw += `<article class="bolsodecuero">
         <h3>${informacion[i].title}</h3>
         <div class="containerImg">
-            <a href="detalleProducto.html?id=${informacion[i].id}">
+            <a href="producto.html?id=${informacion[i].id}">
                 <img src="${informacion[i].image}" alt="">
             </a>
         </div>
         <p> ${informacion[i].description}</p>
         <h4 class="precio"> ${informacion[i].price}</h4>
-        <a class="buttonVerMas" href="detalleProducto.html?id=${informacion[i].id}">Ver mas</a>
+        <a class="buttonVerMas" href="producto.html?id=${informacion[i].id}">Ver mas</a>
     </article>`;
     }
 
