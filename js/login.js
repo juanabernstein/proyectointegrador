@@ -10,18 +10,22 @@ logform.addEventListener ('submit', function(event){
         return;
     }
 
-    if (pass.value === "") {
+    else if (pass.value === "") {
     alert('Por favor complete el campo contraseña');
     return;
     } 
 
-    if (pass.value.length <6) {
+    else if (pass.value.length <6) {
         alert('La contraseña debe tener al menos 6 caracteres');
         return;
     }
-   
+
+    else {
+        this.submit ()
+    }
 
 })
+
 
 
 
