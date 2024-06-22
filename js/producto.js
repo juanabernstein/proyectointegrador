@@ -21,10 +21,24 @@ fetch(urlDetalleProducto)
     <p> ${data.description}</p>
     <h4 class="precio"> ${data.price}</h4>
     <a href="detalleCategoria.html?category=${data.category}"> ${data.category}  </a>
-    <a href="cart.html?> Agregar al carrito </a>
+    <button id='carrito'> <a href=cart.html?${data.id}> Agregar al carrito </a> </button>
 </article>`
 
 section.innerHTML = articleProducto
 
+let carrito= document.querySelector ('#carrito') 
+carrito.addEventListener ('click', function(){
+    let listaCarrito= []
+    if (localStorage.getItem ('listaCarrito') && localStorage.getItem ('listaCarrito') !=null) {
+       let listaCarrito= JSON.parse(localStorage.getItem ('listaCarrito') 
+    )
+    } 
+    listaCarrito.push(id)
+    localStorage.setItem ('listaCarrito', JSON.stringify(listaCarrito))
+    console.log (localStorage)
+    
+    
 })
+})
+  
 
