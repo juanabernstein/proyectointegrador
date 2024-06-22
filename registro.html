@@ -24,19 +24,23 @@
     </header> 
 
 <h3 class="inputregistro"> Formulario registro </h3>
+<main class="registro">
 
-<form action="results.html" method="get" class="formregistro">
+<form action="results.html" method="get" class="formregistro" id="registerForm">
 
 <div>
-<input type="email" name="name" value="" placeholder="Email" class="inputregistro">
+<input type="email" id="registerEmail" name="email" value="" placeholder="Email" class="inputregistro">
+<p id="emailError"></p>
 </div>
     
 <div>
-<input type="password" name="pass" value="" placeholder="Password" class="inputregistro">
+<input type="password"  id="registerPassword" name="password" value="" placeholder="Password" class="inputregistro">
+<p id="passwordError"></p>
 </div> 
 
 <div>
-<input type="password" name="pass" value="" placeholder="Repeat password" class="inputrepeat">
+<input type="password"  id="confirmPassword" name="confirmPassword" value="" placeholder="Repeat password" class="inputrepeat">
+<p id="confirmError"></p>
 </div> 
     
 <div>
@@ -44,7 +48,8 @@
 </div>
     
 <div>
-<label for="checkbox" class="labelaccept"> Acepto los terminos y condiciones</label> <input type="checkbox" class="inputcheckbox">
+<label for="checkbox" class="labelaccept"> Acepto los terminos y condiciones</label> <input type="checkbox" id="checkbox" class="inputcheckbox">
+<p id="checkboxError"></p>
 </div> 
     
 <div>
@@ -52,6 +57,8 @@
 </div>
 
 </form>
+</main>
+
 </body>
 
 

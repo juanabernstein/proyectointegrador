@@ -26,6 +26,11 @@ logform.addEventListener ('submit', function(event){
 
 })
 
+//Si el formulario cumple con las validaciones deberá guardar el email del usuario en localstorage y redirigir a la página principal.
+
+
+
+
 
 
 
