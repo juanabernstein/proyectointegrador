@@ -6,6 +6,7 @@ let checkbox = document.querySelector ('#checkbox');
 
 let completarMail = document.querySelector ('#emailError')
 let completarPass =  document.querySelector ('#passwordError')
+let check = document.querySelector('#confirmError')
 
 
 
@@ -23,6 +24,11 @@ capturoForm.addEventListener ('submit', function(event){
 
     else if (password.value.length <6) {
         completarPass.innerText = 'Debe ingresar al menos seis caracteres'
+    }
+
+    else if (password.value !== confirm.value) {
+        check.innerText = 'Las contraseñas no coinciden'
+
     }
 
     else {

@@ -21,10 +21,13 @@ logform.addEventListener ('submit', function(event){
     }
 
     else {
-        this.submit () 
-        localStorage.setItem ("email", "email") 
+        this.submit () ;
+     
+      
+    
     }
 
+  
 
 
 })
