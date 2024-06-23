@@ -1,9 +1,10 @@
 //capturar todos//
 fetch('https://fakestoreapi.com/products')
-            .then(function (responsive){
-                return responsive.json();
+            .then(function (response){
+                return response.json();
             })
             .then (function (data){
+                console.log(data);
             })
 
 //accesorios//
@@ -75,19 +76,31 @@ fetch (url2)
 
 
 //ropa hombre//
-let divcontainerSection3 = document.querySelector ; //NO SE QUE VA ACA//
-let ropaM = [];
-console.log (arrayDeProductos);
+let url3 = "https://fakestoreapi.com/products/category/men's%20clothing"
+fetch (url3)
+.then (function(respponse){
+    return response.json();
+})
+.then (function(data){
+    let productos = document.querySelector (".containerSection3");
+    let ropaM = '';
+    let informacion = data;
 
-for (let i=0; i<4; i++){
-    ropaM += `<div>
-                <img src="${arrayDeProductos[i].image}" alt="${arrayDeProductos[i].title}">
-                <h4> </h4>
-                <p> </p>
-                <p> </p>
-                <a href="   >Ver mas </a>
-            </div>`
-}
+    for (let i=0; i<informacion.length; i++){
+        console.log(informacion[i]);
+        ropaM += `<article class="bolsodecuero">
+        <h3>${informacion[i].title}</h3>
+        <div class="containerImg">
+        <a href="producto.html?id=${informacion[i].id}">
+        <img src=${informacion[i].image}" alt="">
+        </a>
+        </div>
+        <p> ${informacion[i].description}</p>
+        <h3 class="precio"> ${informacion[i].price}</h3>
+        <a class="buttonVerMas" href="producto.html?id=${informacion[i].id}">Ver mas</a>
+        </article>
+        `;
+    }
 
-divcontainerSection3.innerHTML = ropaM
-
+    productos.innerHTML = ropaM ;
+})
