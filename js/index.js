@@ -98,8 +98,7 @@ fetch (url3)
         <p> ${informacion[i].description}</p>
         <h3 class="precio"> ${informacion[i].price}</h3>
         <a class="buttonVerMas" href="producto.html?id=${informacion[i].id}">Ver mas</a>
-        </article>
-        `;
+        </article>`;
     }
 
     productos.innerHTML = ropaM ;
