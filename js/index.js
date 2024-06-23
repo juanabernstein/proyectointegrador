@@ -1,3 +1,13 @@
+//capturar todos//
+fetch('https://fakestoreapi.com/products')
+            .then(function (responsive){
+                return responsive.json();
+            })
+            .then (function (data){
+            })
+
+//accesorios//
+
 let url = 'https://fakestoreapi.com/products/category/jewelery' ;
 fetch (url) 
 .then (function(response) {
@@ -31,6 +41,7 @@ fetch (url)
     console.log ("El error es" + error);
 })
 
+//ropa mujer//
 
 let url2 = "https://fakestoreapi.com/products/category/women's%20clothing"
 fetch (url2) 
@@ -61,3 +72,22 @@ fetch (url2)
     productos.innerHTML = ropaw ; 
 
 })
+
+
+//ropa hombre//
+let divcontainerSection3 = document.querySelector ; //NO SE QUE VA ACA//
+let ropaM = [];
+console.log (arrayDeProductos);
+
+for (let i=0; i<4; i++){
+    ropaM += `<div>
+                <img src="${arrayDeProductos[i].image}" alt="${arrayDeProductos[i].title}">
+                <h4> </h4>
+                <p> </p>
+                <p> </p>
+                <a href="   >Ver mas </a>
+            </div>`
+}
+
+divcontainerSection3.innerHTML = ropaM
+
