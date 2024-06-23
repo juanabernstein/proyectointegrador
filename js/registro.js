@@ -2,8 +2,79 @@ let capturoForm = document.querySelector ('#registerForm');
 let email = document.querySelector ('#registerEmail'); 
 let password = document.querySelector ('#registerPassword'); 
 let confirm = document.querySelector ('#confirmPassword'); 
-let ccheckbox = document.querySelector ('#checkbox'); 
+let checkbox = document.querySelector ('#checkbox'); 
 
+let completarMail = document.querySelector ('#emailError')
+let completarPass =  document.querySelector ('#passwordError')
+
+
+
+capturoForm.addEventListener ('submit', function(event){
+    event.preventDefault();
+
+    if (email.value === "") {
+        completarMail.innerText = 'Por Favor complete este campo'
+    }
+
+    else if (password.value === "") {
+        completarPass.innerText = 'Por Favor complete este campo'
+  
+    } 
+
+    else if (password.value.length <6) {
+        completarPass.innerText = 'Debe ingresar al menos seis caracteres'
+    }
+
+    else {
+        this.submit () 
+        
+    }
+
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//capturoForm.addEventListener ('submit', function (event){
+   // event.preventDefault ;
+
+   // if (email.value === "") {
+      //  completarMail.innerText = 'Por Favor complete este campo'
+
+   // }
+    
+
+   // else if (password.value === "") {
+      //  completarPass.innerText = 'Por Favor complete este campo'
+
+
+   // }
+
+   // else if (password.value.length <6) {
+    //    completarPass.innerText = 'Debe ingresar al menos seis caracteres'
+   // }
+
+
+
+
+
+//})
 
 
 
