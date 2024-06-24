@@ -24,7 +24,6 @@ formCapturado.addEventListener ('submit', function(event){
        this.submit();
        recibida.innerText = 'Recibiras un mail con las instrucciones para recuperar tu contraseña' ;
        login.style.display = "block";
-       //window.location.href= './index.html'
     } 
     
 })

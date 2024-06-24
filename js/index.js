@@ -1,7 +1,7 @@
 //capturar todos//
 fetch('https://fakestoreapi.com/products')
-            .then(function (response){
-                return response.json();
+           .then(function (response){
+               return response.json();
             })
             .then (function (data){
                 console.log(data);
@@ -82,7 +82,7 @@ fetch (url3)
     return response.json();
 })
 .then (function(data){
-    let productos = document.querySelector (".containerSection3");
+    let producto = document.querySelector (".containerSection3");
     let ropaM = '';
     let informacion = data;
 
@@ -101,5 +101,5 @@ fetch (url3)
         </article>`;
     }
 
-    productos.innerHTML = ropaM ;
+    producto.innerHTML = ropaM ;
 })
