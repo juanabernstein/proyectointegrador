@@ -1,12 +1,3 @@
-//capturar todos//
-fetch('https://fakestoreapi.com/products')
-            .then(function (response){
-                return response.json();
-            })
-            .then (function (data){
-                console.log(data);
-            })
-
 //accesorios//
 
 let url = 'https://fakestoreapi.com/products/category/jewelery' ;
@@ -76,9 +67,9 @@ fetch (url2)
 
 
 //ropa hombre//
-let url3 = "https://fakestoreapi.com/products/category/men's%20clothing"
+let url3 = 'https://fakestoreapi.com/products/1' //VER ESTO
 fetch (url3)
-.then (function(respponse){
+.then (function(response){
     return response.json();
 })
 .then (function(data){
@@ -102,4 +93,8 @@ fetch (url3)
     }
 
     productos.innerHTML = ropaM ;
+})
+
+.catch (function (error) {
+    console.log ("El error es" + error);
 })
