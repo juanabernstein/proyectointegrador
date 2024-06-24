@@ -21,12 +21,14 @@ logform.addEventListener ('submit', function(event){
     }
 
     else {
-        this.submit () 
-        localStorage.setItem ("email", "email") 
-        window.location.href= './index.html'
+        this.submit () ;
+        localStorage.setItem ('loginEmail', 'email') ;
+        window.location.href = './index.html';
+      
     
     }
 
+  
 
 })
 

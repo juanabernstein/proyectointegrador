@@ -1,3 +1,14 @@
+//capturar todos//
+fetch('https://fakestoreapi.com/products')
+            .then(function (response){
+                return response.json();
+            })
+            .then (function (data){
+                console.log(data);
+            })
+
+//accesorios//
+
 let url = 'https://fakestoreapi.com/products/category/jewelery' ;
 fetch (url) 
 .then (function(response) {
@@ -31,6 +42,7 @@ fetch (url)
     console.log ("El error es" + error);
 })
 
+//ropa mujer//
 
 let url2 = "https://fakestoreapi.com/products/category/women's%20clothing"
 fetch (url2) 
@@ -60,4 +72,34 @@ fetch (url2)
 
     productos.innerHTML = ropaw ; 
 
+})
+
+
+//ropa hombre//
+let url3 = "https://fakestoreapi.com/products/category/men's%20clothing"
+fetch (url3)
+.then (function(respponse){
+    return response.json();
+})
+.then (function(data){
+    let productos = document.querySelector (".containerSection3");
+    let ropaM = '';
+    let informacion = data;
+
+    for (let i=0; i<informacion.length; i++){
+        console.log(informacion[i]);
+        ropaM += `<article class="bolsodecuero">
+        <h3>${informacion[i].title}</h3>
+        <div class="containerImg">
+        <a href="producto.html?id=${informacion[i].id}">
+        <img src=${informacion[i].image}" alt="">
+        </a>
+        </div>
+        <p> ${informacion[i].description}</p>
+        <h3 class="precio"> ${informacion[i].price}</h3>
+        <a class="buttonVerMas" href="producto.html?id=${informacion[i].id}">Ver mas</a>
+        </article>`;
+    }
+
+    productos.innerHTML = ropaM ;
 })
