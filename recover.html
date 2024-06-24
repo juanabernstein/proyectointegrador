@@ -24,28 +24,39 @@
         <li> <img src="./imagenes/logo.png" alt="Fotologo"></li>
         </ul>
         </nav>
+
+        <p id="user"> </p>
         </header>
         
-        <h3 class="inputregistro"> Formulario registro </h3>
+        <h3 class="inputregistro"> Formulario recuperar contraseña </h3>
 
-        <form action="results.html" method="get" class="formregistro"> </form>
         
-        <div>
-        <input type="email" name="name" value="" placeholder="Email" class="inputregistro">
-        </div>
+        <main>
+            <form id="recoverForm" method="get" class="formregistro" action="#"> 
+        
+                <div>
+                <input type="email" id="confirm" name="email" value="" placeholder="Email" class="inputregistro">
+                <p id="recoverError"> </p>
+                </div>
+                    
             
-
-        <div>
-        <label for="checkbox" class="labelaccept"> Quiero recuperar mi contraseña </label> <input type="checkbox" class="inputcheckbox">
-        </div> 
-            
-        <div>
-        <button>  Recuperar  </button>
-        </div>
+                <div>
+                <label for="checkbox" id="tickeado" class="labelaccept"> Quiero recuperar mi contraseña </label> 
+                <input type="checkbox" id="check" class="inputcheckbox" >
+                <p id="aceptar"></p>
+                </div> 
+                    
+                <div>
+                <button type="submit">  Recuperar  </button>
+                </div>
+                <p id="recibida"></p>
+                <p id="irLogin"> <a href="login.html"> ir a login </a> </p>
+                </form>
+    
+        </main>
     
     
-
-
+    
     
         <footer> <h3> Juana Bernstein, Delfina Camuglia y Magdalena Sanchez </h3>
             <h4 class="clothingstore"> Clothing store </h4>

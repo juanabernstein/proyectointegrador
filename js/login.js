@@ -23,13 +23,13 @@ logform.addEventListener ('submit', function(event){
     else {
         this.submit () 
         localStorage.setItem ("email", "email") 
+        window.location.href= './index.html'
+    
     }
-
 
 
 })
 
-//Si el formulario cumple con las validaciones deberá guardar el email del usuario en localstorage y redirigir a la página principal.
 
 
 
