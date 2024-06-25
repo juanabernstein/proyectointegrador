@@ -1,10 +1,9 @@
 let logform = document.querySelector ('#loginForm') ; 
-let email = document.querySelector ('#loginEmail') ; 
 let pass = document.querySelector ('#loginPassword') ;  
+let email= document.querySelector ('#loginEmail')
 
-logform.addEventListener ('submit', function(event){
-    event.preventDefault();
-
+form.addEventListener ('submit', function(e){
+    e.preventDefault();
     if (email.value === "") {
         alert('Porfavor complete el campo email!');
         return;
@@ -22,10 +21,9 @@ logform.addEventListener ('submit', function(event){
 
     else {
         this.submit () ;
-        localStorage.setItem ('loginEmail', 'email') ;
+        localStorage.setItem ('loginuser', 'user', JSON.stringify(useremail)) ;
         window.location.href = './index.html';
-      
-    
+        console.log ("usuario log", useremail)
     }
 
   
