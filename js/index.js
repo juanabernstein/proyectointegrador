@@ -67,32 +67,32 @@ fetch (url2)
 
 
 //ropa hombre//
-let url3 = 'https://fakestoreapi.com/products/1' //VER ESTO
+let url3 = "https://fakestoreapi.com/products/category/men's%20clothing"
 fetch (url3)
-.then (function(response){
-    return response.json();
+.then (function(respponse){
+    return respponse.json();
 })
 .then (function(data){
-    let producto = document.querySelector (".containerSection3");
+    let product = document.querySelector (".containerSection3");
     let ropaM = '';
-    let informacion = data;
+    let inform = data;
 
-    for (let i=0; i<informacion.length; i++){
-        console.log(informacion[i]);
+    for (let i=0; i<inform.length; i++){
+        console.log(inform[i]);
         ropaM += `<article class="bolsodecuero">
-        <h3>${informacion[i].title}</h3>
+        <h3>${inform[i].title}</h3>
         <div class="containerImg">
-        <a href="producto.html?id=${informacion[i].id}">
-        <img src=${informacion[i].image}" alt="">
+        <a href="producto.html?id=${inform[i].id}">
+        <img src=${inform[i].image}" alt="">
         </a>
         </div>
-        <p> ${informacion[i].description}</p>
-        <h3 class="precio"> ${informacion[i].price}</h3>
-        <a class="buttonVerMas" href="producto.html?id=${informacion[i].id}">Ver mas</a>
+        <p> ${inform[i].description}</p>
+        <h3 class="precio"> ${inform[i].price}</h3>
+        <a class="buttonVerMas" href="producto.html?id=${inform[i].id}">Ver mas</a>
         </article>`;
     }
 
-    producto.innerHTML = ropaM ;
+    product.innerHTML = ropaM ;
 })
 
 .catch (function (error) {
