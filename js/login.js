@@ -21,11 +21,11 @@ logform.addEventListener ('submit', function(e){
 
     else {
         this.submit () ;
-        localStorage.setItem ('loginuser', 'user') ;
+       localStorage.setItem ('loginuser', JSON.stringify(user)) ;
         window.location.href = './index.html';
         //console.log ("usuario log", useremail)
     }
-
+    
   
 
 })
